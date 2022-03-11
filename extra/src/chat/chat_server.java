@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package chat;
-
+// importar los paquetes
 import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -48,14 +48,14 @@ public class chat_server extends javax.swing.JFrame {
         msg_area.setRows(5);
         jScrollPane1.setViewportView(msg_area);
 
-        msg_text.setText("jTextField1");
+        msg_text.setText("Escribir mensaje");
         msg_text.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_textActionPerformed(evt);
             }
         });
 
-        msg_send.setText("jButton1");
+        msg_send.setText("enviar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +69,7 @@ public class chat_server extends javax.swing.JFrame {
                         .addComponent(msg_text, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(msg_send)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

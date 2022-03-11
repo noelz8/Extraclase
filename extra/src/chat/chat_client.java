@@ -45,14 +45,14 @@ public class chat_client extends javax.swing.JFrame {
         msg_area.setRows(5);
         jScrollPane1.setViewportView(msg_area);
 
-        msg_text.setText("jTextField1");
+        msg_text.setText("Escribir mensaje");
         msg_text.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_textActionPerformed(evt);
             }
         });
 
-        msg_send.setText("jButton1");
+        msg_send.setText("enviar");
         msg_send.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_sendActionPerformed(evt);
@@ -147,8 +147,10 @@ public class chat_client extends javax.swing.JFrame {
                 msgin= din.readUTF();
                 msg_area.setText(msg_area.getText().trim()+"\n Server:\t"+msgin);
             }
+                 
+        }catch(IOException e){
             
-        }catch(IOException e)
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
